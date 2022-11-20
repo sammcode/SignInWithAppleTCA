@@ -13,6 +13,14 @@ public enum AppState: Equatable {
     case main(MainState)
     
     public init() { self = .signIn(SignInState()) }
+    init(status: AppleAuthenticationStatus) {
+        switch status {
+        case .signedIn:
+            self = .main(MainState())
+        case .signedOut:
+            self = .signIn(SignInState())
+        }
+    }
 }
 
 public enum AppAction: Equatable {
