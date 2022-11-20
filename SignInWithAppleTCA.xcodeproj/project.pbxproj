@@ -8,17 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		B2478F4B2918719F0031E088 /* SignInWithAppleTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */; };
-		B2478F4D2918719F0031E088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F4C2918719F0031E088 /* ContentView.swift */; };
 		B2478F4F291871A10031E088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2478F4E291871A10031E088 /* Assets.xcassets */; };
 		B2478F52291871A10031E088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2478F51291871A10031E088 /* Preview Assets.xcassets */; };
+		B2478F592918723D0031E088 /* AppleAuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F582918723D0031E088 /* AppleAuthenticationResponse.swift */; };
+		B2478F5B2918724D0031E088 /* AuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F5A2918724D0031E088 /* AuthenticationClient.swift */; };
+		B2478F5D2918725C0031E088 /* LiveAuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F5C2918725C0031E088 /* LiveAuthenticationClient.swift */; };
+		B2478F5F291872850031E088 /* AppleAuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F5E291872850031E088 /* AppleAuthenticationError.swift */; };
+		B2478F61291872A20031E088 /* AppleAuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F60291872A20031E088 /* AppleAuthenticationCoordinator.swift */; };
+		B2478F662918A1220031E088 /* SignInCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F652918A1220031E088 /* SignInCore.swift */; };
+		B2478F682918A1300031E088 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F672918A1300031E088 /* SignInView.swift */; };
+		B2478F6B2918A1690031E088 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B2478F6A2918A1690031E088 /* ComposableArchitecture */; };
+		B2478F6D2918C0470031E088 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F6C2918C0470031E088 /* AppCore.swift */; };
+		B2478F6F2918C04F0031E088 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F6E2918C04E0031E088 /* AppView.swift */; };
+		B2478F712918C1130031E088 /* MainCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F702918C1130031E088 /* MainCore.swift */; };
+		B2478F732918C11C0031E088 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F722918C11B0031E088 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B22C211D292AA9190040C7E4 /* SignInWithAppleTCA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithAppleTCA.entitlements; sourceTree = "<group>"; };
 		B2478F472918719F0031E088 /* SignInWithAppleTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithAppleTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleTCAApp.swift; sourceTree = "<group>"; };
-		B2478F4C2918719F0031E088 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2478F4E291871A10031E088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2478F51291871A10031E088 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2478F582918723D0031E088 /* AppleAuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationResponse.swift; sourceTree = "<group>"; };
+		B2478F5A2918724D0031E088 /* AuthenticationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationClient.swift; sourceTree = "<group>"; };
+		B2478F5C2918725C0031E088 /* LiveAuthenticationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAuthenticationClient.swift; sourceTree = "<group>"; };
+		B2478F5E291872850031E088 /* AppleAuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationError.swift; sourceTree = "<group>"; };
+		B2478F60291872A20031E088 /* AppleAuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		B2478F652918A1220031E088 /* SignInCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInCore.swift; sourceTree = "<group>"; };
+		B2478F672918A1300031E088 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B2478F6C2918C0470031E088 /* AppCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		B2478F6E2918C04E0031E088 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		B2478F702918C1130031E088 /* MainCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCore.swift; sourceTree = "<group>"; };
+		B2478F722918C11B0031E088 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2478F6B2918A1690031E088 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +74,15 @@
 		B2478F492918719F0031E088 /* SignInWithAppleTCA */ = {
 			isa = PBXGroup;
 			children = (
+				B22C211D292AA9190040C7E4 /* SignInWithAppleTCA.entitlements */,
+				B2478F6429189FAA0031E088 /* AuthenticationClient */,
 				B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */,
-				B2478F4C2918719F0031E088 /* ContentView.swift */,
+				B2478F6C2918C0470031E088 /* AppCore.swift */,
+				B2478F6E2918C04E0031E088 /* AppView.swift */,
+				B2478F702918C1130031E088 /* MainCore.swift */,
+				B2478F722918C11B0031E088 /* MainView.swift */,
+				B2478F652918A1220031E088 /* SignInCore.swift */,
+				B2478F672918A1300031E088 /* SignInView.swift */,
 				B2478F4E291871A10031E088 /* Assets.xcassets */,
 				B2478F50291871A10031E088 /* Preview Content */,
 			);
@@ -65,6 +95,18 @@
 				B2478F51291871A10031E088 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2478F6429189FAA0031E088 /* AuthenticationClient */ = {
+			isa = PBXGroup;
+			children = (
+				B2478F5C2918725C0031E088 /* LiveAuthenticationClient.swift */,
+				B2478F5A2918724D0031E088 /* AuthenticationClient.swift */,
+				B2478F582918723D0031E088 /* AppleAuthenticationResponse.swift */,
+				B2478F5E291872850031E088 /* AppleAuthenticationError.swift */,
+				B2478F60291872A20031E088 /* AppleAuthenticationCoordinator.swift */,
+			);
+			path = AuthenticationClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +125,9 @@
 			dependencies = (
 			);
 			name = SignInWithAppleTCA;
+			packageProductDependencies = (
+				B2478F6A2918A1690031E088 /* ComposableArchitecture */,
+			);
 			productName = SignInWithAppleTCA;
 			productReference = B2478F472918719F0031E088 /* SignInWithAppleTCA.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,9 @@
 				Base,
 			);
 			mainGroup = B2478F3E2918719F0031E088;
+			packageReferences = (
+				B2478F692918A1690031E088 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = B2478F482918719F0031E088 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +185,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2478F4D2918719F0031E088 /* ContentView.swift in Sources */,
+				B2478F5B2918724D0031E088 /* AuthenticationClient.swift in Sources */,
+				B2478F732918C11C0031E088 /* MainView.swift in Sources */,
+				B2478F592918723D0031E088 /* AppleAuthenticationResponse.swift in Sources */,
+				B2478F5D2918725C0031E088 /* LiveAuthenticationClient.swift in Sources */,
+				B2478F712918C1130031E088 /* MainCore.swift in Sources */,
+				B2478F682918A1300031E088 /* SignInView.swift in Sources */,
+				B2478F61291872A20031E088 /* AppleAuthenticationCoordinator.swift in Sources */,
+				B2478F6D2918C0470031E088 /* AppCore.swift in Sources */,
+				B2478F6F2918C04F0031E088 /* AppView.swift in Sources */,
+				B2478F662918A1220031E088 /* SignInCore.swift in Sources */,
 				B2478F4B2918719F0031E088 /* SignInWithAppleTCAApp.swift in Sources */,
+				B2478F5F291872850031E088 /* AppleAuthenticationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SignInWithAppleTCA/SignInWithAppleTCA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SignInWithAppleTCA/Preview Content\"";
@@ -280,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.SignInWithAppleTCA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SignInWithAppleTCA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -293,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SignInWithAppleTCA/SignInWithAppleTCA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SignInWithAppleTCA/Preview Content\"";
@@ -309,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.SignInWithAppleTCA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SignInWithAppleTCA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2478F692918A1690031E088 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2478F6A2918A1690031E088 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2478F692918A1690031E088 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2478F3F2918719F0031E088 /* Project object */;
 }
