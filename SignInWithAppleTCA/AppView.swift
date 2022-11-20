@@ -19,20 +19,10 @@ struct AppView: View {
         WithViewStore(self.store) { viewStore in
             SwitchStore(self.store) {
                 CaseLet(state: /AppState.signIn, action: AppAction.signIn) { store in
-                    NavigationView {
-                        ZStack {
-                            SignInView(store: store)
-                        }
-                    }
-                    .navigationViewStyle(.stack)
+                    SignInView(store: store)
                 }
                 CaseLet(state: /AppState.main, action: AppAction.main) { store in
-                    NavigationView {
-                        ZStack {
-                            MainView(store: store)
-                        }
-                    }
-                    .navigationViewStyle(.stack)
+                    MainView(store: store)
                 }
             }
             .onAppear {
