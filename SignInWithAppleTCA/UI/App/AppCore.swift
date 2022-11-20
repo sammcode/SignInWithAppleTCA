@@ -72,15 +72,21 @@ public let appReducer = AnyReducer<AppState, AppAction, AppEnvironment>.combine(
                 state = .signIn(SignInState())
             }
             return .none
-        case .signIn(.delegate(.signInSuccess)):
-            state = .main(MainState())
+        case let .signIn(action):
+            switch action {
+            case .delegate(.signInSuccess):
+                state = .main(MainState())
+            default:
+                break
+            }
             return .none
-        case .main(.delegate(.didSignOut)):
-            state = .signIn(SignInState())
-            return .none
-        case .signIn:
-            return .none
-        case .main:
+        case let .main(action):
+            switch action {
+            case .delegate(.didSignOut):
+                state = .signIn(SignInState())
+            default:
+                break
+            }
             return .none
         }
     }
