@@ -20,8 +20,6 @@ public struct MainView: View {
     public var body: some View {
         WithViewStore(self.store) { viewStore in
             VStack {
-                Text("Welcome! 😄")
-                Spacer()
                 Button {
                     viewStore.send(.signOutButtonTapped)
                 } label: {
@@ -34,7 +32,7 @@ public struct MainView: View {
                         )
                 }
             }
-            .padding()
+            .navigationTitle("Welcome! 😄")
         }
     }
 }

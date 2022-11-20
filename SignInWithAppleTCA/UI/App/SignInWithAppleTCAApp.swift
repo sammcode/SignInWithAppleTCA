@@ -20,7 +20,10 @@ struct SignInWithAppleTCAApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AppView(store: self.store)
+            NavigationView {
+                AppView(store: self.store)
+            }
+            .preferredColorScheme(.light)
         }
     }
 }

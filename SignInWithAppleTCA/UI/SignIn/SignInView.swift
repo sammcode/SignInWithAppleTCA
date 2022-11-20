@@ -19,8 +19,6 @@ struct SignInView: View {
     var body: some View {
         WithViewStore(self.store) { viewStore in
             VStack {
-                Text("Hello")
-                Spacer()
                 SignInWithAppleButton { _ in } onCompletion: { result in
                     switch result {
                     case .success(let authorization):
@@ -37,6 +35,7 @@ struct SignInView: View {
                 }
                 .frame(width: 200, height: 44)
             }
+            .navigationTitle("Sign in 👀")
         }
     }
 }
