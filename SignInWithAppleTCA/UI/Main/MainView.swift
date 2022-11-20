@@ -8,7 +8,6 @@
 import ComposableArchitecture
 import SwiftUI
 
-// MARK:- View
 public struct MainView: View {
 
     let store: Store<MainState, MainAction>
@@ -38,7 +37,6 @@ public struct MainView: View {
     }
 }
 
-// MARK: Preview
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView(
