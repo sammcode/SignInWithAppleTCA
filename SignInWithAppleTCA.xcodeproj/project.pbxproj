@@ -125,6 +125,15 @@
 			path = SignInWithAppleTCATests;
 			sourceTree = "<group>";
 		};
+		B22C2138292AE9BC0040C7E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2478F4E291871A10031E088 /* Assets.xcassets */,
+				B2478F50291871A10031E088 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B2478F3E2918719F0031E088 = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +158,7 @@
 				B22C211D292AA9190040C7E4 /* SignInWithAppleTCA.entitlements */,
 				B2478F6429189FAA0031E088 /* AuthenticationClient */,
 				B22C2120292ACC940040C7E4 /* UI */,
-				B2478F4E291871A10031E088 /* Assets.xcassets */,
-				B2478F50291871A10031E088 /* Preview Content */,
+				B22C2138292AE9BC0040C7E4 /* Resources */,
 			);
 			path = SignInWithAppleTCA;
 			sourceTree = "<group>";
@@ -477,7 +485,7 @@
 				CODE_SIGN_ENTITLEMENTS = SignInWithAppleTCA/SignInWithAppleTCA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SignInWithAppleTCA/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SignInWithAppleTCA/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 46TV4HNLFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -507,7 +515,7 @@
 				CODE_SIGN_ENTITLEMENTS = SignInWithAppleTCA/SignInWithAppleTCA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SignInWithAppleTCA/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SignInWithAppleTCA/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 46TV4HNLFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
