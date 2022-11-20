@@ -24,10 +24,11 @@ public struct MainView: View {
                     viewStore.send(.signOutButtonTapped)
                 } label: {
                     Text("Sign out")
+                        .bold()
                         .foregroundColor(.white)
-                        .padding()
+                        .frame(width: 200, height: 44)
                         .background(
-                            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                            RoundedRectangle(cornerRadius: 8)
                                 .fill(Color.blue)
                         )
                 }
