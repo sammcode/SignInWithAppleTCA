@@ -28,11 +28,6 @@ class AppleAuthenticationCoordinator: NSObject {
     }
 }
 
-public enum AppleAuthenticationStatus {
-    case signedIn
-    case signedOut
-}
-
 public struct KeychainItem {
     // MARK: Types
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B22C2130292AD0280040C7E4 /* AppCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C212F292AD0280040C7E4 /* AppCoreTests.swift */; };
+		B22C2134292AE5F20040C7E4 /* AppleAuthenticationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C2133292AE5F20040C7E4 /* AppleAuthenticationStatus.swift */; };
 		B2478F4B2918719F0031E088 /* SignInWithAppleTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */; };
 		B2478F4F291871A10031E088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2478F4E291871A10031E088 /* Assets.xcassets */; };
 		B2478F52291871A10031E088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2478F51291871A10031E088 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		B22C211D292AA9190040C7E4 /* SignInWithAppleTCA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithAppleTCA.entitlements; sourceTree = "<group>"; };
 		B22C2126292ACD920040C7E4 /* SignInWithAppleTCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignInWithAppleTCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22C212F292AD0280040C7E4 /* AppCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreTests.swift; sourceTree = "<group>"; };
+		B22C2133292AE5F20040C7E4 /* AppleAuthenticationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationStatus.swift; sourceTree = "<group>"; };
 		B2478F472918719F0031E088 /* SignInWithAppleTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithAppleTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleTCAApp.swift; sourceTree = "<group>"; };
 		B2478F4E291871A10031E088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				B2478F582918723D0031E088 /* AppleAuthenticationResponse.swift */,
 				B2478F5E291872850031E088 /* AppleAuthenticationError.swift */,
 				B2478F60291872A20031E088 /* AppleAuthenticationCoordinator.swift */,
+				B22C2133292AE5F20040C7E4 /* AppleAuthenticationStatus.swift */,
 			);
 			path = AuthenticationClient;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22C2134292AE5F20040C7E4 /* AppleAuthenticationStatus.swift in Sources */,
 				B2478F5B2918724D0031E088 /* AuthenticationClient.swift in Sources */,
 				B2478F732918C11C0031E088 /* MainView.swift in Sources */,
 				B2478F592918723D0031E088 /* AppleAuthenticationResponse.swift in Sources */,
