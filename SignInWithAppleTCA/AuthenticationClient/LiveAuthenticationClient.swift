@@ -6,11 +6,23 @@
 //
 
 import Foundation
+import AuthenticationServices
 
 extension AuthenticationClient {
     public static let live = AuthenticationClient(
         checkAppleAuthenticationStatus: { userID in
-            return await AppleAuthenticationCoordinator.shared.checkAuthenticationStatus(userID: userID)
+            let appleIDProvider = ASAuthorizationAppleIDProvider()
+            do {
+                let credentialState = try await appleIDProvider.credentialState(forUserID: userID)
+                switch credentialState {
+                case .authorized:
+                    return .signedIn
+                default:
+                    return .signedOut
+                }
+            } catch {
+                return .signedOut
+            }
         }
     )
 }
