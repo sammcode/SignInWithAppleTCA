@@ -5,8 +5,8 @@
 //  Created by Samuel McGarry on 11/6/22.
 //
 
-import Foundation
 import AuthenticationServices
+import Foundation
 
 extension AuthenticationClient {
     public static let live = AuthenticationClient(
