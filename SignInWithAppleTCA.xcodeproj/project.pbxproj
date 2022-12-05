@@ -17,12 +17,12 @@
 		B2478F5B2918724D0031E088 /* AuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F5A2918724D0031E088 /* AuthenticationClient.swift */; };
 		B2478F5D2918725C0031E088 /* LiveAuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F5C2918725C0031E088 /* LiveAuthenticationClient.swift */; };
 		B2478F5F291872850031E088 /* AppleAuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F5E291872850031E088 /* AppleAuthenticationError.swift */; };
-		B2478F662918A1220031E088 /* SignInCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F652918A1220031E088 /* SignInCore.swift */; };
+		B2478F662918A1220031E088 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F652918A1220031E088 /* SignIn.swift */; };
 		B2478F682918A1300031E088 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F672918A1300031E088 /* SignInView.swift */; };
 		B2478F6B2918A1690031E088 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B2478F6A2918A1690031E088 /* ComposableArchitecture */; };
-		B2478F6D2918C0470031E088 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F6C2918C0470031E088 /* AppCore.swift */; };
-		B2478F6F2918C04F0031E088 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F6E2918C04E0031E088 /* AppView.swift */; };
-		B2478F712918C1130031E088 /* MainCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F702918C1130031E088 /* MainCore.swift */; };
+		B2478F6D2918C0470031E088 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F6C2918C0470031E088 /* Root.swift */; };
+		B2478F6F2918C04F0031E088 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F6E2918C04E0031E088 /* RootView.swift */; };
+		B2478F712918C1130031E088 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F702918C1130031E088 /* Main.swift */; };
 		B2478F732918C11C0031E088 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F722918C11B0031E088 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,11 +50,11 @@
 		B2478F5A2918724D0031E088 /* AuthenticationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationClient.swift; sourceTree = "<group>"; };
 		B2478F5C2918725C0031E088 /* LiveAuthenticationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAuthenticationClient.swift; sourceTree = "<group>"; };
 		B2478F5E291872850031E088 /* AppleAuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationError.swift; sourceTree = "<group>"; };
-		B2478F652918A1220031E088 /* SignInCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInCore.swift; sourceTree = "<group>"; };
+		B2478F652918A1220031E088 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		B2478F672918A1300031E088 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		B2478F6C2918C0470031E088 /* AppCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
-		B2478F6E2918C04E0031E088 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		B2478F702918C1130031E088 /* MainCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCore.swift; sourceTree = "<group>"; };
+		B2478F6C2918C0470031E088 /* Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		B2478F6E2918C04E0031E088 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B2478F702918C1130031E088 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		B2478F722918C11B0031E088 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,8 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */,
-				B2478F6C2918C0470031E088 /* AppCore.swift */,
-				B2478F6E2918C04E0031E088 /* AppView.swift */,
+				B2478F6C2918C0470031E088 /* Root.swift */,
+				B2478F6E2918C04E0031E088 /* RootView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 		B22C211F292ACC800040C7E4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				B2478F702918C1130031E088 /* MainCore.swift */,
+				B2478F702918C1130031E088 /* Main.swift */,
 				B2478F722918C11B0031E088 /* MainView.swift */,
 			);
 			path = Main;
@@ -109,7 +109,7 @@
 		B22C2121292ACCA00040C7E4 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				B2478F652918A1220031E088 /* SignInCore.swift */,
+				B2478F652918A1220031E088 /* SignIn.swift */,
 				B2478F672918A1300031E088 /* SignInView.swift */,
 			);
 			path = SignIn;
@@ -301,12 +301,12 @@
 				B2478F732918C11C0031E088 /* MainView.swift in Sources */,
 				B2478F592918723D0031E088 /* AppleAuthenticationResponse.swift in Sources */,
 				B2478F5D2918725C0031E088 /* LiveAuthenticationClient.swift in Sources */,
-				B2478F712918C1130031E088 /* MainCore.swift in Sources */,
+				B2478F712918C1130031E088 /* Main.swift in Sources */,
 				B2478F682918A1300031E088 /* SignInView.swift in Sources */,
 				B22C2136292AE69F0040C7E4 /* KeyChainItem.swift in Sources */,
-				B2478F6D2918C0470031E088 /* AppCore.swift in Sources */,
-				B2478F6F2918C04F0031E088 /* AppView.swift in Sources */,
-				B2478F662918A1220031E088 /* SignInCore.swift in Sources */,
+				B2478F6D2918C0470031E088 /* Root.swift in Sources */,
+				B2478F6F2918C04F0031E088 /* RootView.swift in Sources */,
+				B2478F662918A1220031E088 /* SignIn.swift in Sources */,
 				B2478F4B2918719F0031E088 /* SignInWithAppleTCAApp.swift in Sources */,
 				B2478F5F291872850031E088 /* AppleAuthenticationError.swift in Sources */,
 			);

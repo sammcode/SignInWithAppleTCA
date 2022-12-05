@@ -11,17 +11,14 @@ import SwiftUI
 @main
 struct SignInWithAppleTCAApp: App {
     let store = Store(
-        initialState: AppState(),
-        reducer: appReducer,
-        environment: AppEnvironment(
-            authenticationClient: .live
-        )
+        initialState: Root.State(),
+        reducer: Root()
     )
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                AppView(store: self.store)
+                RootView(store: self.store)
             }
             .preferredColorScheme(.light)
         }

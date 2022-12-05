@@ -26,3 +26,13 @@ extension AuthenticationClient {
     )
 }
 #endif
+
+private enum AuthenticationClientKey: DependencyKey {
+    static let liveValue = AuthenticationClient.live
+}
+extension DependencyValues {
+    var authenticationClient: AuthenticationClient {
+        get { self[AuthenticationClientKey.self] }
+        set { self[AuthenticationClientKey.self] = newValue }
+    }
+}
