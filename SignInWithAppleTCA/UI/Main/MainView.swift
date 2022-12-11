@@ -2,8 +2,6 @@
 //  MainView.swift
 //  SignInWithAppleTCA
 //
-//  Created by Samuel McGarry on 8/23/22.
-//
 
 import ComposableArchitecture
 import SwiftUI

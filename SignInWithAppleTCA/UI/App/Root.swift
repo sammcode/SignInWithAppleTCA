@@ -2,8 +2,6 @@
 //  Root.swift
 //  SignInWithAppleTCA
 //
-//  Created by Samuel McGarry on 8/18/22.
-//
 
 import ComposableArchitecture
 import Foundation
