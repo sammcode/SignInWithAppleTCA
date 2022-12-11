@@ -22,11 +22,14 @@ public struct SignIn: ReducerProtocol {
     public var body: some ReducerProtocol<State, Action> {
         Reduce { state, action in
             switch action {
-            case let .signInWithAppleButtonTapped(.success(response)):
-                KeychainItem.saveUserInKeychain(response.userID)
-                return .init(value: .delegate(.signInSuccess))
-            case let .signInWithAppleButtonTapped(.failure(error)):
-                return .none
+            case let .signInWithAppleButtonTapped(result):
+                switch result {
+                case let .success(response):
+                    KeychainItem.saveUserInKeychain(response.userID)
+                    return .init(value: .delegate(.signInSuccess))
+                case .failure:
+                    return .none
+                }
             case .delegate:
                 return .none
             }
