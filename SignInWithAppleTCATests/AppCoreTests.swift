@@ -15,11 +15,8 @@ final class AppCoreTests: XCTestCase {
         let appleAuthenticationResponse = AppleAuthenticationResponse(userID: "1234")
         
         let store = TestStore(
-            initialState: AppState(),
-            reducer: appReducer,
-            environment: AppEnvironment(
-                authenticationClient: AuthenticationClient.unimplemented
-            )
+            initialState: Root.State(),
+            reducer: Root()
         )
         
         let _ = await store.send(.signIn(.signInWithAppleButtonTapped(.success(appleAuthenticationResponse))))
@@ -31,17 +28,14 @@ final class AppCoreTests: XCTestCase {
                 )
             )
         ) {
-            $0 = .main(MainState())
+            $0 = .main(Main.State())
         }
     }
     
     func testMainDelegate() async {
         let store = TestStore(
-            initialState: AppState(status: .signedIn),
-            reducer: appReducer,
-            environment: AppEnvironment(
-                authenticationClient: AuthenticationClient.unimplemented
-            )
+            initialState: Root.State(status: .signedIn),
+            reducer: Root()
         )
         
         let _ = await store.send(.main(.signOutButtonTapped))
@@ -53,48 +47,46 @@ final class AppCoreTests: XCTestCase {
                 )
             )
         ) {
-            $0 = .signIn(SignInState())
+            $0 = .signIn(SignIn.State())
         }
     }
     
     func testAuthenticationStatusCheckSignedIn() async {
+        let store = TestStore(
+            initialState: Root.State(),
+            reducer: Root()
+        )
+        
         var authenticationClient = AuthenticationClient.unimplemented
         
         authenticationClient.checkAppleAuthenticationStatus = { _ in
             .signedIn
         }
         
-        let store = TestStore(
-            initialState: AppState(),
-            reducer: appReducer,
-            environment: AppEnvironment(
-                authenticationClient: authenticationClient
-            )
-        )
+        store.dependencies.authenticationClient = authenticationClient
         
         let _ = await store.send(._onAppear)
         
         await store.receive(
             ._checkAuthenticationStatusResponse(.signedIn)
         ) {
-            $0 = .main(MainState())
+            $0 = .main(Main.State())
         }
     }
     
     func testAuthenticationStatusCheckSignedOut() async {
+        let store = TestStore(
+            initialState: Root.State(),
+            reducer: Root()
+        )
+        
         var authenticationClient = AuthenticationClient.unimplemented
         
         authenticationClient.checkAppleAuthenticationStatus = { _ in
             .signedOut
         }
         
-        let store = TestStore(
-            initialState: AppState(),
-            reducer: appReducer,
-            environment: AppEnvironment(
-                authenticationClient: authenticationClient
-            )
-        )
+        store.dependencies.authenticationClient = authenticationClient
         
         let _ = await store.send(._onAppear)
         
