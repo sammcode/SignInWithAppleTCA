@@ -77,14 +77,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B22C211E292ACC640040C7E4 /* App */ = {
+		B22C211E292ACC640040C7E4 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */,
 				B2478F6C2918C0470031E088 /* Root.swift */,
 				B2478F6E2918C04E0031E088 /* RootView.swift */,
 			);
-			path = App;
+			path = Root;
 			sourceTree = "<group>";
 		};
 		B22C211F292ACC800040C7E4 /* Main */ = {
@@ -99,7 +98,8 @@
 		B22C2120292ACC940040C7E4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				B22C211E292ACC640040C7E4 /* App */,
+				B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */,
+				B22C211E292ACC640040C7E4 /* Root */,
 				B22C211F292ACC800040C7E4 /* Main */,
 				B22C2121292ACCA00040C7E4 /* SignIn */,
 			);
