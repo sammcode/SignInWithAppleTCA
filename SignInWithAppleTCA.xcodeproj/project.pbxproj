@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B22C2130292AD0280040C7E4 /* AppCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C212F292AD0280040C7E4 /* AppCoreTests.swift */; };
+		B22C2130292AD0280040C7E4 /* SignInWithAppleTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C212F292AD0280040C7E4 /* SignInWithAppleTCATests.swift */; };
 		B22C2134292AE5F20040C7E4 /* AppleAuthenticationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C2133292AE5F20040C7E4 /* AppleAuthenticationStatus.swift */; };
 		B22C2136292AE69F0040C7E4 /* KeyChainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C2135292AE69F0040C7E4 /* KeyChainItem.swift */; };
 		B2478F4B2918719F0031E088 /* SignInWithAppleTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F4A2918719F0031E088 /* SignInWithAppleTCAApp.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		B22C211D292AA9190040C7E4 /* SignInWithAppleTCA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithAppleTCA.entitlements; sourceTree = "<group>"; };
 		B22C2126292ACD920040C7E4 /* SignInWithAppleTCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignInWithAppleTCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B22C212F292AD0280040C7E4 /* AppCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreTests.swift; sourceTree = "<group>"; };
+		B22C212F292AD0280040C7E4 /* SignInWithAppleTCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleTCATests.swift; sourceTree = "<group>"; };
 		B22C2133292AE5F20040C7E4 /* AppleAuthenticationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationStatus.swift; sourceTree = "<group>"; };
 		B22C2135292AE69F0040C7E4 /* KeyChainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainItem.swift; sourceTree = "<group>"; };
 		B2478F472918719F0031E088 /* SignInWithAppleTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithAppleTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +118,7 @@
 		B22C2127292ACD920040C7E4 /* SignInWithAppleTCATests */ = {
 			isa = PBXGroup;
 			children = (
-				B22C212F292AD0280040C7E4 /* AppCoreTests.swift */,
+				B22C212F292AD0280040C7E4 /* SignInWithAppleTCATests.swift */,
 			);
 			path = SignInWithAppleTCATests;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22C2130292AD0280040C7E4 /* AppCoreTests.swift in Sources */,
+				B22C2130292AD0280040C7E4 /* SignInWithAppleTCATests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

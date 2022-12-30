@@ -1,5 +1,5 @@
 //
-//  AppCoreTests.swift
+//  SignInWithAppleTCATests.swift
 //  SignInWithAppleTCATests
 //
 
@@ -9,7 +9,7 @@ import XCTest
 @testable import SignInWithAppleTCA
 
 @MainActor
-final class AppCoreTests: XCTestCase {
+final class SignInWithAppleTCATests: XCTestCase {
     
     func testSignInDelegate() async {
         let appleAuthenticationResponse = AppleAuthenticationResponse(userID: "1234")
