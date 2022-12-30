@@ -11,7 +11,7 @@ public struct SignIn: ReducerProtocol {
     
     public enum Action: Equatable {
         public enum Delegate: Equatable {
-            case signInSuccess
+            case didSignIn
         }
         case signInWithAppleButtonTapped(TaskResult<AppleAuthenticationResponse>)
         case delegate(Delegate)
@@ -24,7 +24,7 @@ public struct SignIn: ReducerProtocol {
                 switch result {
                 case let .success(response):
                     KeychainItem.saveUserInKeychain(response.userID)
-                    return .init(value: .delegate(.signInSuccess))
+                    return .init(value: .delegate(.didSignIn))
                 case .failure:
                     return .none
                 }

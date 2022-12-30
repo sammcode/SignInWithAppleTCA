@@ -57,7 +57,7 @@ public struct Root: ReducerProtocol {
                 return .none
             case let .signIn(action):
                 switch action {
-                case .delegate(.signInSuccess):
+                case .delegate(.didSignIn):
                     state = .main(Main.State())
                 default:
                     break

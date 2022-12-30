@@ -24,7 +24,7 @@ final class SignInWithAppleTCATests: XCTestCase {
         await store.receive(
             .signIn(
                 .delegate(
-                    .signInSuccess
+                    .didSignIn
                 )
             )
         ) {
