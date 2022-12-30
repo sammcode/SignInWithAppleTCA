@@ -14,15 +14,6 @@ public struct Root: ReducerProtocol {
         public init() {
             self = .signIn(SignIn.State())
         }
-        
-        init(status: AppleAuthenticationStatus) {
-            switch status {
-            case .signedIn:
-                self = .main(Main.State())
-            case .signedOut:
-                self = .signIn(SignIn.State())
-            }
-        }
     }
     
     public enum Action: Equatable {
