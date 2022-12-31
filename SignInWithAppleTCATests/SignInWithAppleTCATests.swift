@@ -11,7 +11,7 @@ import XCTest
 @MainActor
 final class SignInWithAppleTCATests: XCTestCase {
     
-    func testSignInDelegate() async {
+    func testSignInSuccess() async {
         let appleAuthenticationResponse = AppleAuthenticationResponse(userID: "1234")
         
         let store = TestStore(
@@ -32,7 +32,7 @@ final class SignInWithAppleTCATests: XCTestCase {
         }
     }
     
-    func testMainDelegate() async {
+    func testSignOut() async {
         let store = TestStore(
             initialState: Root.State(status: .signedIn),
             reducer: Root()
