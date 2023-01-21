@@ -189,8 +189,8 @@
 		B2538C84297C9C90007AEBF7 /* KeychainClient */ = {
 			isa = PBXGroup;
 			children = (
-				B2538C85297C9D6C007AEBF7 /* KeychainClient.swift */,
 				B2538C87297C9EC4007AEBF7 /* LiveKeychainClient.swift */,
+				B2538C85297C9D6C007AEBF7 /* KeychainClient.swift */,
 				B22C2135292AE69F0040C7E4 /* KeychainItem.swift */,
 			);
 			path = KeychainClient;
