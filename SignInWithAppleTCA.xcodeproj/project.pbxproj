@@ -24,6 +24,8 @@
 		B2478F6F2918C04F0031E088 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F6E2918C04E0031E088 /* RootView.swift */; };
 		B2478F712918C1130031E088 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F702918C1130031E088 /* Main.swift */; };
 		B2478F732918C11C0031E088 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2478F722918C11B0031E088 /* MainView.swift */; };
+		B2538C86297C9D6C007AEBF7 /* KeychainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2538C85297C9D6C007AEBF7 /* KeychainClient.swift */; };
+		B2538C88297C9EC4007AEBF7 /* LiveKeychainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2538C87297C9EC4007AEBF7 /* LiveKeychainClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		B2478F6E2918C04E0031E088 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B2478F702918C1130031E088 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		B2478F722918C11B0031E088 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B2538C85297C9D6C007AEBF7 /* KeychainClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainClient.swift; sourceTree = "<group>"; };
+		B2538C87297C9EC4007AEBF7 /* LiveKeychainClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveKeychainClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				B22C211D292AA9190040C7E4 /* SignInWithAppleTCA.entitlements */,
+				B2538C84297C9C90007AEBF7 /* KeychainClient */,
 				B2478F6429189FAA0031E088 /* AuthenticationClient */,
 				B22C2120292ACC940040C7E4 /* UI */,
 				B22C2138292AE9BC0040C7E4 /* Resources */,
@@ -177,9 +182,18 @@
 				B2478F582918723D0031E088 /* AppleAuthenticationResponse.swift */,
 				B2478F5E291872850031E088 /* AppleAuthenticationError.swift */,
 				B22C2133292AE5F20040C7E4 /* AppleAuthenticationStatus.swift */,
-				B22C2135292AE69F0040C7E4 /* KeychainItem.swift */,
 			);
 			path = AuthenticationClient;
+			sourceTree = "<group>";
+		};
+		B2538C84297C9C90007AEBF7 /* KeychainClient */ = {
+			isa = PBXGroup;
+			children = (
+				B2538C85297C9D6C007AEBF7 /* KeychainClient.swift */,
+				B2538C87297C9EC4007AEBF7 /* LiveKeychainClient.swift */,
+				B22C2135292AE69F0040C7E4 /* KeychainItem.swift */,
+			);
+			path = KeychainClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +320,8 @@
 				B22C2136292AE69F0040C7E4 /* KeychainItem.swift in Sources */,
 				B2478F6D2918C0470031E088 /* Root.swift in Sources */,
 				B2478F6F2918C04F0031E088 /* RootView.swift in Sources */,
+				B2538C88297C9EC4007AEBF7 /* LiveKeychainClient.swift in Sources */,
+				B2538C86297C9D6C007AEBF7 /* KeychainClient.swift in Sources */,
 				B2478F662918A1220031E088 /* SignIn.swift in Sources */,
 				B2478F4B2918719F0031E088 /* SignInWithAppleTCAApp.swift in Sources */,
 				B2478F5F291872850031E088 /* AppleAuthenticationError.swift in Sources */,

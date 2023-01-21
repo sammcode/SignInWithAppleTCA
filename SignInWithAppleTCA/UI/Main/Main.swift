@@ -17,14 +17,16 @@ public struct Main: ReducerProtocol {
         case delegate(Delegate)
     }
     
-    @Dependency(\.authenticationClient) var authenticationClient
+    @Dependency(\.keychainClient) var keychainClient
     
     public var body: some ReducerProtocol<State, Action> {
         Reduce { state, action in
             switch action {
             case .signOutButtonTapped:
-                KeychainItem.deleteUserIdentifierFromKeychain()
-                return .init(value: .delegate(.didSignOut))
+                return .run { send in
+                    await keychainClient.deleteUser()
+                    await send(.delegate(.didSignOut))
+                }
             case .delegate:
                 return .none
             }

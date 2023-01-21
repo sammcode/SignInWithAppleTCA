@@ -17,14 +17,18 @@ public struct SignIn: ReducerProtocol {
         case delegate(Delegate)
     }
     
+    @Dependency(\.keychainClient) var keychainClient
+    
     public var body: some ReducerProtocol<State, Action> {
         Reduce { state, action in
             switch action {
             case let .signInWithAppleButtonTapped(result):
                 switch result {
                 case let .success(response):
-                    KeychainItem.saveUserInKeychain(response.userID)
-                    return .init(value: .delegate(.didSignIn))
+                    return .run { send in
+                        await keychainClient.saveUser(response.userID)
+                        await send(.delegate(.didSignIn))
+                    }
                 case .failure:
                     return .none
                 }
