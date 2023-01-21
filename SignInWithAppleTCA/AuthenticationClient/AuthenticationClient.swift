@@ -27,6 +27,7 @@ extension AuthenticationClient {
 
 private enum AuthenticationClientKey: DependencyKey {
     static let liveValue = AuthenticationClient.live
+    static let testValue = AuthenticationClient.unimplemented
 }
 extension DependencyValues {
     var authenticationClient: AuthenticationClient {

@@ -57,13 +57,9 @@ final class SignInWithAppleTCATests: XCTestCase {
             reducer: Root()
         )
         
-        var authenticationClient = AuthenticationClient.unimplemented
-        
-        authenticationClient.checkAppleAuthenticationStatus = { _ in
+        store.dependencies.authenticationClient.checkAppleAuthenticationStatus = { _ in
             .signedIn
         }
-        
-        store.dependencies.authenticationClient = authenticationClient
         
         let _ = await store.send(._onAppear)
         
@@ -80,13 +76,9 @@ final class SignInWithAppleTCATests: XCTestCase {
             reducer: Root()
         )
         
-        var authenticationClient = AuthenticationClient.unimplemented
-        
-        authenticationClient.checkAppleAuthenticationStatus = { _ in
+        store.dependencies.authenticationClient.checkAppleAuthenticationStatus = { _ in
             .signedOut
         }
-        
-        store.dependencies.authenticationClient = authenticationClient
         
         let _ = await store.send(._onAppear)
         
