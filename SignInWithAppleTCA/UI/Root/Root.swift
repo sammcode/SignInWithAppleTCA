@@ -11,8 +11,13 @@ public struct Root: ReducerProtocol {
         case signIn(SignIn.State)
         case main(Main.State)
         
-        public init() {
-            self = .signIn(SignIn.State())
+        public init(status: AppleAuthenticationStatus = .signedOut) {
+            switch status {
+            case .signedIn:
+                self = .main(Main.State())
+            case .signedOut:
+                self = .signIn(SignIn.State())
+            }
         }
     }
     
