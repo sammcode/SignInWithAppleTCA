@@ -19,6 +19,8 @@ final class SignInWithAppleTCATests: XCTestCase {
             reducer: Root()
         )
         
+        store.dependencies.keychainClient.saveUser = { _ in }
+        
         let _ = await store.send(.signIn(.signInWithAppleButtonTapped(.success(appleAuthenticationResponse))))
         
         await store.receive(
@@ -37,6 +39,8 @@ final class SignInWithAppleTCATests: XCTestCase {
             initialState: Root.State(status: .signedIn),
             reducer: Root()
         )
+        
+        store.dependencies.keychainClient.deleteUser = {}
         
         let _ = await store.send(.main(.signOutButtonTapped))
         
